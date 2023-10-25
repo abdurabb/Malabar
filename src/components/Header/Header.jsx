@@ -1,77 +1,72 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import './Header.css';
-import { Link } from 'react-router-dom';
 
-
-
-
-// import logo from '../../logo.svg'
 function Header() {
-
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
+        setIsMenuOpen(!isMenuOpen);
     };
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
 
     return (
         <div>
-            <div className='w-screen'>
-                <header id='header' className='text-white flex justify-between items-center  fixed-top p-2'>
-                    <div className=' font-serif hover:scale-95'>
-                        <h1 className="text-xl ml-4"> <span id='malabar'>Malabar</span><span id='stars'> Stars Food Stuff</span></h1>
-                    </div>
-
-                    <div className="lg:hidden">
-                        <button id="mobileMenuButton" className="text-black" onClick={toggleMenu}>
-                            <svg
-                                className="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h16M4 18h16"
-                                ></path>
-                            </svg>
+            <nav className="p-4 bg-white fixed w-full top-0 z-1">
+                <div className="container mx-auto flex justify-between items-center">
+                    <div className="text-black font-bold text-2xl">Your Logo</div>
+                    <div className="sm:hidden">
+                        <button onClick={toggleMenu} className="text-black text-2xl mr-0">
+                            {isMenuOpen ? (
+                                <i className="fas fa-times"></i>
+                            ) : (
+                                <i className="fas fa-bars"></i>
+                            )}
                         </button>
                     </div>
+                    <div
+                        className={`sm:hidden ${isMenuOpen ? 'block' : 'hidden'
+                            } absolute top-0 right-0 bg-white h-auto w-full `}
+                    >
 
-                    <div className={` lg:block ${menuOpen ? 'block' : 'hidden'} `}>
-                        {!menuOpen ?
-                            <nav className='text-white font-serif space-x-4 mr-4'>
-                                <a href="#" className="hover:underline">Home</a>
-                                <a href="#" className="hover:underline">About</a>
-                                <a href="#" className="hover:underline">Services</a>
-                                <a href="#" className="hover:underline">Contact</a>
-                            </nav>
-                            :
-                            <div className=''>
-                                <nav className='text-white font-serif space-x-4'>
-                                    <ul>
-                                        <li>
-                                            <a href="#" className="hover:underline">Home</a></li>
-                                        <li> <a href="#" className="hover:underline">About</a></li>
-                                        <li>  <a href="#" className="hover:underline">Services</a></li>
-                                        <li> <a href="#" className="hover:underline">Contact</a></li>
-                                    </ul>
-                                </nav>
+                        <ul className="d-block lg:hidden  space-x-4  p-4 ">
+                            <li className='d-flex  justify-end'><button onClick={closeMenu} className="text-black text-2xl  mt-4">
+                                <i className="fas fa-times "></i>
+                            </button></li>
+                            <div className='d-flex justify-center'>
+                            
+                                <ul>
+                                    <li className="text-black"></li>
+                                    <li className="text-black">Home</li>
+                                    <li className="text-black">Mission</li>
+                                    <li className="text-black">Perks & Benifites</li>
+                                    <li className="text-black">About Us</li>
+                                    <li className="text-black">Services</li>
+                                    <li className="text-black">Founders</li>
+                                    <li className="text-black">Contact Us</li>
+                                </ul>
                             </div>
+                        </ul>
 
-                        }
                     </div>
-                </header>
-            </div>
+                    <div className=" hidden md:hidden lg:flex   space-x-4">
+                        <ul className="lg:flex  space-x-4">
 
+                            <li className="text-black">Home</li>
+                            <li className="text-black">Mission</li>
+                            <li className="text-black">Perks & Benifites</li>
+                            <li className="text-black">About Us</li>
+                            <li className="text-black">Services</li>
+                            <li className="text-black">Founders</li>
+                            <li className="text-black">Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-
-        
-    )
+    );
 }
 
-export default Header
+export default Header;

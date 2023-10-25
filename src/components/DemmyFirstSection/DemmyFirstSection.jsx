@@ -15,8 +15,8 @@ function DemmyFirstSection() {
             <div className='container'>
                 <div className='row'>
                     <div className="  col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                        <h1 data-aos="fade-up" class="aos-init aos-animate">Welcome To Malabar <br />🚀</h1>
-                        <h2 data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">from Zero to Hero</h2>
+                        <h1 data-aos="fade-up" class="aos-init aos-animate">Welcome To Malabar </h1>
+                        <h2 data-aos="fade-up" data-aos-delay="400" className=" mt-4 aos-init aos-animate">from Zero to Hero</h2>
                         <div style={styled} className=''>
                             <h5 data-aos="fade-up" class="h3-header aos-init aos-animate" data-aos-delay="400">
                                 ✅ In depth High Quality Videos
