@@ -2,7 +2,7 @@ import React from 'react'
 
 function ContactUs() {
     return (
-        <div>
+        <div id='contact'>
             <section className="hiddenSection">
                 <div class="container mx-auto px-4">
                     <div className='section-title aos-init aos-animate' data-aos="fade-up">

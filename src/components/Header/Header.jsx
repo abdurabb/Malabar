@@ -37,30 +37,30 @@ function Header() {
                             </button></li>
                             <div className='d-flex justify-center'>
                             
-                                <ul>
+                                <ul className=''>
                                     <li className="text-black"></li>
-                                    <li className="text-black">Home</li>
-                                    <li className="text-black">Mission</li>
-                                    <li className="text-black">Perks & Benifites</li>
-                                    <li className="text-black">About Us</li>
-                                    <li className="text-black">Services</li>
-                                    <li className="text-black">Founders</li>
-                                    <li className="text-black">Contact Us</li>
+                                    <li className="text-black"><a href="#home">Home</a></li>
+                                    <li className="text-black"><a href="#mission">Mission</a></li>
+                                    <li className="text-black"><a href="#features">Perks & Benifites</a></li>
+                                    <li className="text-black"><a href="#about">About Us</a></li>
+                                    <li className="text-black"><a href="#services">Services</a></li>
+                                    <li className="text-black"><a href="#founders">Founders</a></li>
+                                    <li className="text-black"><a href="#contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </ul>
 
                     </div>
                     <div className=" hidden md:hidden lg:flex   space-x-4">
-                        <ul className="lg:flex  space-x-4">
+                        <ul  className="lg:flex  space-x-4 ">
 
-                            <li className="text-black">Home</li>
-                            <li className="text-black">Mission</li>
-                            <li className="text-black">Perks & Benifites</li>
-                            <li className="text-black">About Us</li>
-                            <li className="text-black">Services</li>
-                            <li className="text-black">Founders</li>
-                            <li className="text-black">Contact Us</li>
+                            <li className="text-black"><a href="#home">Home</a></li>
+                            <li className="text-black"><a href="#mission">Mission</a></li>
+                            <li className="text-black"><a href="#features">Perks & Benifites</a></li>
+                            <li className="text-black"><a href="#about">About Us</a></li>
+                            <li className="text-black"><a href="#services">Services</a></li>
+                            <li className="text-black"><a href="#founders">Founders</a></li>
+                            <li className="text-black"><a href="#contact">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

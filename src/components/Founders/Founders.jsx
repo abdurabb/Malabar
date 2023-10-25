@@ -2,7 +2,7 @@ import React from 'react'
 import './Founders.css'
 function Founders() {
     return (
-        <div className='bg-gray-100 mt-4 team section-bg  hiddenSection'>
+        <div id='founders' className='bg-gray-100 mt-4 team section-bg  hiddenSection'>
             <div className='container'>
                 <div class="section-title aos-init aos-animate" data-aos="fade-up">
                     <h2>

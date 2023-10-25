@@ -2,7 +2,7 @@ import React from 'react'
 import './AboutUs2.css';
 function AboutUs2() {
     return (
-        <div className='bg-white mb-5 mt-4  hiddenSection'>
+        <div id='about' className='bg-white mb-5 mt-4  hiddenSection'>
             <div className='section-title aos-init aos-animate' data-aos="fade-up">
                 <h2>
                     <span className='beforr'></span>

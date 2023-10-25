@@ -4,7 +4,7 @@ import './About.css';
 
 function About() {
   return (
-    <div className='hiddenSection'>
+    <div id='services' className='hiddenSection'>
 
       <div class="bg-white mb-5  mt-4">
         <div className=" p-5 bg-gray-100">
