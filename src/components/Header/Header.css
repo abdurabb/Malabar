@@ -1,0 +1,74 @@
+/* Define styles for the header container */
+header {
+  background-color: hsla(157, 92%, 5%, 0.651);
+  /* Background color for the header */
+  color: #0f0f0f;
+  /* Text color for the header */
+  padding: 10px;
+  /* Add padding to the header for spacing */
+  text-align: center;
+  /* Center-align the content within the header */
+  /* position: relative; */
+  /* background: transparent; */
+  opacity: 20;
+}
+
+
+#header {
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 22px 0;
+  background: #fff;
+  color: #0f0f0f;
+
+}
+
+
+#malabar{
+  color: rgb(255, 102, 0);
+  margin-left: 5px;
+  font-family: "Open Sans", sans-serif;
+    
+}
+#stars{
+  color: rgb(255, 153, 0);
+  font-family: "Open Sans", sans-serif;
+    
+}
+
+/* Style the header title (e.g., the logo or site name) */
+header h1 {
+
+  font-size: 36px;
+  /* Adjust the font size */
+  margin: 0;
+  color: #0f0f0f;
+  /* Remove any default margin */
+}
+
+/* Style the navigation menu within the header */
+header nav {
+  margin-top: 10px;
+  /* Add some space between the title and the navigation */
+}
+
+/* Style the links in the navigation menu */
+header nav a {
+  font-family: "Open Sans", sans-serif;
+    color: #444444;
+
+  /* color: hsl(0, 50%, 98%); */
+  color: #0f0f0f;
+  /* Text color for links */
+  text-decoration: none;
+  /* Remove underline from links */
+  margin: 0 10px;
+  /* Add spacing between links */
+  font-size: 18px;
+  /* Adjust the font size of links */
+}
+
+/* Style links when hovered over */
+header nav a:hover {
+  color: #d80b34;
+}

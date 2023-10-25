@@ -1,0 +1,29 @@
+.image {
+
+    /* background-image: url("https://media.istockphoto.com/id/1088958160/photo/brown-striped-wooden-textured-background-on-black.jpg?s=612x612&w=0&k=20&c=gsq5Rr7qLI47fVecyNM_K-AbMh2VdvUoEbfI4Q5Ouv0="); */
+    /* ../../../public/backgroundImage.avif */
+    width: 100%;
+    background-size: cover;
+    /* Scale the image to cover the entire container */
+    background-position: center center;
+    /* Center the image horizontally and vertically */
+    background-repeat: no-repeat;
+    /* Prevent image repetition */
+    background-size: cover;
+    height: 550px;
+    /* Set a minimum height to ensure the image covers the full viewport height */
+
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 400px; */
+}
+
+.dotsContainerStyles {
+    margin-top: 450px;
+    /* margin-bottom: 20px; */
+    
+}
